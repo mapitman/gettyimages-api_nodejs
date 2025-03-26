@@ -1,20 +1,19 @@
-"use strict";
-var Credentials = require("./lib/credentials");
-var VideoDownloads = require("./lib/downloadsvideos");
-var ImageDownloads = require("./lib/downloadsimages");
-var Images = require("./lib/images");
-var SdkException = require("./lib/sdkexception");
-var SearchImages = require("./lib/searchimages");
-var SearchImagesCreative = require("./lib/searchimagescreative");
-var SearchImagesEditorial = require("./lib/searchimageseditorial");
-var Collections = require("./lib/collections");
-var Countries = require("./lib/countries");
-var Events = require("./lib/events");
-var Videos = require("./lib/videos");
-var SearchVideos = require("./lib/searchvideos");
-var SearchVideosCreative = require("./lib/searchvideoscreative");
-var SearchVideosEditorial = require("./lib/searchvideoseditorial");
-var CustomRequest = require("./lib/customrequest");
+import Credentials from "./lib/credentials.js";
+import VideoDownloads from "./lib/downloadsvideos.js";
+import ImageDownloads from "./lib/downloadsimages.js";
+import Images from "./lib/images.js";
+import SdkException from "./lib/sdkexception.js";
+import SearchImages from "./lib/searchimages.js";
+import SearchImagesCreative from "./lib/searchimagescreative.js";
+import SearchImagesEditorial from "./lib/searchimageseditorial.js";
+import Collections from "./lib/collections.js";
+import Countries from "./lib/countries.js";
+import Events from "./lib/events.js";
+import Videos from "./lib/videos.js";
+import SearchVideos from "./lib/searchvideos.js";
+import SearchVideosCreative from "./lib/searchvideoscreative.js";
+import SearchVideosEditorial from "./lib/searchvideoseditorial.js";
+import CustomRequest from "./lib/customrequest.js";
 
 const _hostName = new WeakMap();
 const _credentialOptions = new WeakMap();
@@ -127,4 +126,8 @@ class GettyImagesApi {
     }
 }
 
-module.exports = GettyImagesApi;
+/**
+ * The GettyImagesApi module serves as the default export for interacting with the Getty Images API.
+ * It provides methods and functionality to access and manage Getty Images resources.
+ */
+export default GettyImagesApi;

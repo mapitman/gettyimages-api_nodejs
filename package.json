@@ -1,6 +1,7 @@
 {
   "name": "gettyimages-api",
   "version": "0.0.0",
+  "type": "module",
   "description": "Getty Images API SDK",
   "keywords": [
     "getty",

@@ -1,6 +1,6 @@
-const api = require("../gettyimages-api");
-const nock = require("nock");
-const test = require("ava");
+import api from "../gettyimages-api.js";
+import nock from "nock";
+import test from "ava";
 
 test.beforeEach( () => {
     nock("https://authentication.gettyimages.com")
